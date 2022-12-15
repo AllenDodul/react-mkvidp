@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './style.css';
 
-const Nav = () =>{
+const Nav = (props) =>{
   const [modeStatus, setModeStatus] = useState("light");
   const [mode, setMode] = useState({
     position: "relative",
@@ -17,6 +17,7 @@ const Nav = () =>{
         top: "2px",
         left: "20px"
       })
+      props.themeStatus(modeStatus);
     }else{
       setModeStatus("light");
       setMode({
@@ -24,6 +25,7 @@ const Nav = () =>{
         top: "2px",
         right: "-2px"
       })
+      props.themeStatus(modeStatus);
     }
   }
 

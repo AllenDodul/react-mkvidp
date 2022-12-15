@@ -3,6 +3,7 @@
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 .switch{
@@ -13,6 +14,7 @@
   position: absolute;
   top: 5px;
   right: 10px;
+  cursor: pointer;
 }
 .cirecle{
   height: 16px;
