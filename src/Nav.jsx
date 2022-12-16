@@ -15,7 +15,8 @@ const Nav = (props) =>{
       setMode({
         position: "relative",
         top: "2px",
-        left: "20px"
+        left: "20px",
+        border: "1px solid black",
       })
       props.themeStatus(modeStatus);
     }else{
@@ -23,7 +24,8 @@ const Nav = (props) =>{
       setMode({
         position: "relative",
         top: "2px",
-        right: "-2px"
+        right: "-2px",
+        border: "1px solid white"
       })
       props.themeStatus(modeStatus);
     }
